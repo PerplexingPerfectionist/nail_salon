@@ -1,3 +1,93 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#manicure {
+    background-image: linear-gradient(to bottom, white 30%, transparent), url('../assets/images/manicured_nails.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+#pedicure {
+    background-image: linear-gradient(to top, white 30%, transparent), url('../assets/images/pedicured_toes.webp');
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    #manicure {
+        background-image: linear-gradient(to top, white 10%, transparent), url('../assets/images/manicured_nails.webp');
+        background-position: center bottom 400px;
+    }
+    #pedicure {
+        background-image: linear-gradient(to top, white 10%, transparent), url('../assets/images/pedicured_toes.webp');
+        background-position: center top 10%;
+    }
+}
+
+form input {
+    display: block;
+    height: 40px;
+    border: 1px solid #9ca3af;
+    margin: 1em 0 1em 0;
+    padding: 3px 7px 3px 7px;
+    width: 100%;
+}
+
+form textarea {
+    display: block;
+    border: 1px solid #9ca3af;
+    margin: 1em 0 1em 0;
+    padding: 3px 7px 3px 7px;
+    width: 100%;
+}
+
+#menu a{
+    display: block;
+}
+
+/* Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all .25s;
+    position: relative;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all .25s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    background: #FF008E;
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    background: #FF008E;
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

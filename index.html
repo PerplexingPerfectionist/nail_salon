@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro beatae corporis nostrum vel pariatur error.">
+    <title>Diamond Shine Nails</title>
+
+    <link rel="shortcut icon" href="./assets/icons/diamond.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="relative flex flex-row p-6">
+        <!-- Hamburger -->
+        <button id="menu-btn" class="m-6 hamburger" aria-label="menu" onClick="handleMenuClick()">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+        <!-- Menu -->
+        <div id="menu" class="hidden absolute flex-col font-bold w-auto mt-12 px-6 py-6 bg-white">
+            <a href="./index.html" class="group w-48 hover:text-brightPink focus:text-darkPink hover:translate-x-1 duration-200 py-3">
+                <img src="./assets/icons/fingernail.png" alt="" class="h-6 inline-flex group-hover:hidden rotate-90">
+                <img src="./assets/icons/fingernail_painted_brightPink.png" alt="" class="h-6 hidden group-hover:inline-flex rotate-90">
+                Home
+            </a>
+            <a href="./about.html" class="group w-48 hover:text-brightPink focus:text-darkPink hover:translate-x-1 duration-200 py-3">
+                <img src="./assets/icons/fingernail.png" alt="" class="h-6 inline-flex group-hover:hidden rotate-90">
+                <img src="./assets/icons/fingernail_painted_purple.png" alt="" class="h-6 hidden group-hover:inline-flex rotate-90">
+                About
+            </a>
+            <a href="./services.html" class="group w-48 hover:text-brightPink focus:text-darkPink hover:translate-x-1 duration-200 py-3">
+                <img src="./assets/icons/fingernail.png" alt="" class="h-6 inline-flex group-hover:hidden rotate-90">
+                <img src="./assets/icons/fingernail_painted_darkPink.png" alt="" class="h-6 hidden group-hover:inline-flex rotate-90">
+                Services
+            </a>
+            <a href="./contact.html" class="group w-48 hover:text-brightPink focus:text-darkPink hover:translate-x-1 duration-200 py-3">
+                <img src="./assets/icons/fingernail.png" alt="" class="h-6 inline-flex group-hover:hidden rotate-90">
+                <img src="./assets/icons/fingernail_painted_navyBlue.png" alt="" class="h-6 hidden group-hover:inline-flex rotate-90">
+                Contact
+            </a>
+        </div>
+        <!-- Logo -->
+        <div class="flex flex-row ml-auto md:mx-auto md:px-6 md:rounded-full md:bg-white">
+            <img src="./assets/icons/diamond.png" alt="" class="h-8 w-auto my-auto">
+            <span class="text-2xl md:text-3xl font-bold my-auto mx-2 text-darkPink">Diamond Shine Nails</span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="absolute -z-10 top-0">
+            <img src="./assets/images/colors.webp" alt="" class="opacity-50">
+        </div>
+        <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-3 mx-auto my-auto py-12 gap-6">
+            <div class="lg:col-span-2 lg:order-1 flex flex-col space-y-6 px-6">
+                <h1 class="text-7xl md:text-8xl font-bold">
+                    Diamond<br>Shine Nails
+                </h1>
+                <h2 class="text-2xl">
+                    Bowling Green, KY Area
+                </h2>
+                <button class="py-3 px-8 w-fit font-bold uppercase border-2 border-black hover:border-brightPink hover:text-brightPink">
+                    Book an Appointment
+                </button>
+            </div>
+            <div class="row-span-2 lg:order-3 ml-6">
+                <img src="./assets/images/manicure.webp" alt="Woman getting a manicure" class="rounded-br-[50%] max-w-[50%] lg:max-w-full">
+            </div>
+            <div class="space-y-6 max-w-md mx-auto p-6 lg:order-4">
+                <span class="text-lg font-bold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt eos ad!
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorem quaerat incidunt voluptatum dolor ducimus impedit nulla accusamus consequatur alias voluptas temporibus, accusantium quia fugit porro, amet in, illo hic.</p>
+            </div>
+            <div class="row-span-2 lg:order-2 mr-6">
+                <img src="./assets/images/nail_polish.webp" alt="Colorful nail polish" class="rounded-full max-w-[50%] lg:max-w-full mx-auto lg:mx-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials -->
+    <section id="specials" class="relative">
+        <img src="./assets/images/flower.webp" alt="" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 min-w-[100%] md:min-w-[50%] ">
+
+        <div class="flex flex-col mx-auto my-12 max-w-[65%] md:max-w-[50%] lg:max-w-lg px-6 py-20 bg-black text-white">
+            <h1 class="mb-6 text-3xl md:text-5xl text-center font-bold uppercase">
+                Summer<br>Specials
+            </h1>
+            <!-- Special Table -->
+            <table class="table-fixed mx-auto w-full md:w-3/4">
+                <tr class="h-10">
+                    <td>Manicure</td>
+                    <td class="font-bold text-right">$20</td>
+                </tr>
+                <tr class="h-10">
+                    <td>Gel Manicure</td>
+                    <td class="font-bold text-right">$25</td>
+                </tr>
+                <tr class="h-10">
+                    <td>Trim Nails</td>
+                    <td class="font-bold text-right">FREE</td>
+                </tr>
+                <tr class="h-10">
+                    <td>Pedicure</td>
+                    <td class="font-bold text-right">$35</td>
+                </tr>
+                <tr class="h-10">
+                    <td>Mani+Pedi</td>
+                    <td class="font-bold text-right">$50</td>
+                </tr>
+            </table>
+            <!-- Button -->
+            <button class="mt-6 py-3 px-8 w-fit font-bold uppercase hover:text-brightPink self-center">
+                Book Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="max-w-5xl flex flex-col md:flex-row items-center md:items-start justify-center my-40 mx-auto px-12">
+            <div id="manicure" class="flex flex-col h-[200px] w-[90%] md:h-[600px] md:w-1/3 md:rounded-b-full">
+                <span class="text-xl font-bold text-center mt-auto mb-6 md:mb-auto md:mt-40">Manicure</span>
+            </div>
+            <div id="pedicure" class="flex flex-col h-[200px] w-[90%] md:h-[600px] md:w-1/3 md:rounded-tl-[200px]">
+                <span class="text-xl font-bold text-center mt-auto mb-6 md:mb-40">Pedicare</span>
+            </div>
+            <div class="flex flex-col h-[100px] w-[90%] md:h-[400px] md:w-1/3 rounded-br-[200px] bg-darkPink">
+                <a href="./services.html" class="mx-auto my-auto md:-rotate-90">
+                    <span class="text-white text-2xl font-bold">All Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Card -->
+    <section id="gift_card">
+        <div class="max-w-5xl flex flex-col md:flex-row my-12 mx-auto px-6 min-h-[550px] bg-split-trans-pink">
+            <div class="flex flex-col bg-purple aspect-[525/300] w-[75%] md:w-1/2 max-h-[250px] md:max-h-full mx-auto mb-auto mt-6 md:mt-24 md:-mr-32 lg:-mr-50 rounded-xl shadow-xl -rotate-3 relative">
+                <div class="flex flex-col bg-white h-full w-full rounded-xl border border-purple -rotate-6 absolute overflow-hidden">
+                    <img src="./assets/images/colored_smoke.webp" alt="" class="absolute -z-10 opacity-75 h-full w-full">
+                    <span class="text-brightPink my-auto mx-auto text-[9vw] md:text-[6vw] lg:text-7xl font-bold uppercase">
+                        Gift Card
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col h-full w-full md:w-[60%] mt-6 md:my-auto">
+                <span class="text-5xl md:text-7xl font-bold text-center md:text-right tracking-wide mt-auto mx-auto md:mx-0 md:ml-40 pt-3 pb-12">Share The Love</span>
+                <button class="py-3 px-8 mb-12 mx-auto md:mx-0 md:ml-auto w-fit font-bold uppercase border-2 border-black hover:border-purple hover:text-purple">
+                    Purchase a Gift Card
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container flex flex-col md:flex-row max-w-6xl justify-around space-y-12 md:space-y-0 mx-auto py-12 px-8">
+            <div class="flex flex-col space-y-3 text-center font-bold uppercase">
+                Diamond Shine Nails
+                <div class="flex flex-row mx-auto my-3 space-x-6">
+                    <a href="#">
+                        <img src="./assets/icons/facebook.png" alt="Facebook" class="h-6">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/twitter.png" alt="Twitter" class="h-6">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/icons/instagram.png" alt="Instagram" class="h-6">
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 text-center font-bold">
+                <a href="./index.html" class="hover:text-brightPink focus:text-darkPink duration-200">
+                    Home
+                </a>
+                <a href="./about.html" class="hover:text-brightPink focus:text-darkPink duration-200">
+                    About
+                </a>
+                <a href="./services.html" class="hover:text-brightPink focus:text-darkPink duration-200">
+                    Services
+                </a>
+                <a href="./contact.html" class="hover:text-brightPink focus:text-darkPink duration-200">
+                    Contact
+                </a>
+            </div>
+            <div class="flex flex-col space-y-3 text-center font-bold">
+                <span>Mon-Fri 10:00AM - 8:00PM</span>
+                <span>Sat 10:00AM - 6:00PM</span>
+                <span>Sun 10:00AM - 2:00PM</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact -->
+    <div class="container max-w-lg flex flex-col mx-auto py-12 px-6">
+        <span class="text-3xl md:text-5xl text-center font-bold uppercase mb-12">
+            Book An Appointment
+        </span>
+        <form action="submit">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+            <input type="email" name="email" id="email" placeholder="Email Address">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="text-right">
+                <button class="py-3 px-8 w-fit font-bold uppercase border-2 border-black hover:border-brightPink hover:text-brightPink">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
